@@ -9,7 +9,7 @@ def mostrar_clima():
         cidade = input('Digite a cidade que deseja ver o clima: ').strip()
 
     try:
-        url = f'https://api.openweathermap.org/data/2.5/weather?q={cidade}&units=metric&lang=pt_br&appid=7442cc5859d171c2e7c7be34b0be973e'
+        url = f'https://api.openweathermap.org/data/2.5/weather?q={cidade}&units=metric&lang=pt_br&appid=minha_chave'
         response = requests.get(url)
         response.raise_for_status()
         dados = response.json()
